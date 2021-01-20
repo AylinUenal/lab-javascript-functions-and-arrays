@@ -19,13 +19,13 @@ function findLongestWord(arrayOfWords) {
 
   if (arrayOfWords.length === 0) {
     return null;
-  } else {
+  }  
     for (let i = 0; i < arrayOfWords.length; i++) {
       if (arrayOfWords[i].length > longestWord.length) {
         longestWord = arrayOfWords[i];
       } 
   }
-  } return longestWord
+   return longestWord
 }
 
 findLongestWord(words);
@@ -53,14 +53,15 @@ function averageNumbers(arrayOfNumbers){
 
   if (arrayOfNumbers.length === 0) {
     return null;
-  } else {
+  }  
     for (let i = 0; i < arrayOfNumbers.length; i++) {
-      resultAverage += arrayOfNumbers[i]/arrayOfNumbers.length;
+      resultAverage += arrayOfNumbers[i];
   }
-  } return resultAverage;
+   return resultAverage/arrayOfNumbers.length;
 } 
 
 averageNumbers(numbersAvg);
+
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
